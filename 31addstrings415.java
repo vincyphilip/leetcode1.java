@@ -1,4 +1,4 @@
-class Solution {
+  class Solution {
     public String addStrings(String num1, String num2) {
         StringBuilder result = new StringBuilder();
 
@@ -22,3 +22,7 @@ class Solution {
             result.append(sum % 10);
             carry = sum / 10;
         }
+
+        return result.reverse().toString();
+    }
+}
